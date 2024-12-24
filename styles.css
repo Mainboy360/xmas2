@@ -72,12 +72,18 @@
   justify-content: flex-end;
 }
 
-
-img[src*="right"]{
-  width: 100%;
-  margin: 0px;
+.merry-xmas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: green;
 }
 
+.xmas {
+   border-right: 2px solid red;
+  padding-right: 10px;
+}
 
 .social-media-and-link-container {
   display: flex;
@@ -102,13 +108,14 @@ img[src*="xmax-box-with-rope-and-ball"]{
 }
 
 .typejs-cursor {
-  color: red;  /* Change to your desired color */
+  color: orange;  /* Change to your desired color */
  
 }
 
 
 .single-xmas-box {
   margin-top: 200px;
+  
 }
 
 
@@ -154,4 +161,12 @@ img[src$="svg"]{
 img[src*="gnome"] {
   align-self: flex-end;
 } 
+
+
+.paragraph-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 
