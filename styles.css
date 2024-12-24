@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  /*  font-style: italic; */
+}
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.top-decoration-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+img[src*="right"]{
+  width: 100%;
+  margin: 0px;
+}
+
+
+.social-media-and-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 30px;
+  padding: 30px;
+}
+
+img[src*="xmax-box-with-rope-and-ball"]{
+  width: 350px;
+}
+
+.text-container {
+  margin-top: 250px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.typejs-cursor {
+  color: red;  /* Change to your desired color */
+ 
+}
+
+
+.single-xmas-box {
+  margin-top: 200px;
+}
+
+
+img[src*="xmas-box-alone"] {
+  width: 500px;
+  height: 100%;
+}
+
+img[src$="svg"]{
+  width: 100px;
+} 
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  font-style: italic;
+  margin-top: 300px;
+}
+
+
+
+.made-with  {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: black;
+  gap: 20px;
+  font-style: italic;
+}
+
+
+.gnome-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 13vh;
+  margin-top: 300px;
+} 
+
+img[src*="gnome"] {
+  align-self: flex-end;
+} 
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-UK"> 
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="oldstyles.css">
+  <title>Merry Christmas from me</title>
+</head>
+<body style="background-color: #EBF4F6">
+  
+  <div class="top-decoration-container">
+    <div class="social-media-and-link-container">
+      <img src="images/ride.png">
+    </div>
+    <a href="https://iamsolomon.vercel.app"  target="_blank"><img src="images/xmax-box-with-rope-and-ball.png" alt="xmax box with rope"></a>
+  </div>
+  
+  <div class="text-container chakra-petch-regular typejs-cursor ">
+      <h2><span id="typed-text" style="color: orange"></span></h2>
+    </div>
+  
+  <!---auto type --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script>
+      new Typed('#typed-text', {
+      strings: [
+         "",
+        "<span style='color: brown'>25<sup>th</sup> December, 2024...</span>",
+        "",
+        "<span style='color: brown'>I wish you a Merry Christmas and a prosperous New Year<span style='color: red'>!!</span></span>",
+        "<span style='color: brown'>A year filled with blessings and opportunities. I also pray that 2025 be the year, your dreams and your desires come true...</span>",
+        "<span style='color: brown'>From me to you...</span>",
+        ""],
+      typeSpeed: 100,
+      backSpeed: 150,
+      backDelay: 2000,
+      loop: true,
+      cursorChar: "<span style='font-size: 8rem'>⛄</span>",
+    });
+   </script>
+  
+  
+  <div class="single-xmas-box">
+    <a href="https://iamsolomon.vercel.app" target="_blank"><img src="images/xmas-box-alone.png" alt="xmas box"></a>
+  </div>
+  <footer>
+       <div class="made-with chakra-petch-light">
+        <h1>Made with ♥️ just for you my dear</h1>
+    </div>
+  </footer>
+  
+  <div class="gnome-container">
+    <img src="images/gnome.png" alt="gnome">
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  
+  <!---snow section--->
+   <script>
+    const NUMBER_OF_SNOWFLAKES = 1000;
+    const MAX_SNOWFLAKE_SIZE = 10;
+    const MAX_SNOWFLAKE_SPEED = 2;
+    const SNOWFLAKE_COLOUR = '#fff';
+    const snowflakes = [];
+
+    const canvas = document.createElement('canvas');
+    canvas.style.position = 'absolute';
+    canvas.style.pointerEvents = 'none';
+    canvas.style.top = '0px';
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    document.body.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    
+    
+    const createSnowflake = () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.floor(Math.random() * MAX_SNOWFLAKE_SIZE) + 1,
+        color: SNOWFLAKE_COLOUR,
+        speed: Math.random() * MAX_SNOWFLAKE_SPEED + 1,
+        sway: Math.random() - 0.5 // next
+      });
+
+    const drawSnowflake = snowflake => {
+        ctx.beginPath();
+        ctx.arc(snowflake.x, snowflake.y, snowflake.radius, 0, Math.PI * 2);
+        ctx.fillStyle = snowflake.color;
+        ctx.fill();
+        ctx.closePath();
+      }
+
+    const updateSnowflake = snowflake => {
+        snowflake.y += snowflake.speed;
+        snowflake.x += snowflake.sway; // next
+        if (snowflake.y > canvas.height) {
+            Object.assign(snowflake, createSnowflake());
+        }
+    }
+
+    const animate = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+        snowflakes.forEach(snowflake => {
+            updateSnowflake(snowflake);
+            drawSnowflake(snowflake);
+        });
+    
+        requestAnimationFrame(animate);
+    }
+
+    for (let i = 0; i < NUMBER_OF_SNOWFLAKES; i++) {
+        snowflakes.push(createSnowflake());
+    }
+    
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+
+    window.addEventListener('scroll', () => {
+        canvas.style.top = `${window.scrollY}px`;
+    });
+    
+    // setInterval(animate, 15);
+    animate()
+  </script>
+</body>
+</html>
