@@ -4,6 +4,7 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 1.3rem;
 }
 
 .chakra-petch-regular {
@@ -169,4 +170,30 @@ img[src*="gnome"] {
   gap: 10px;
 }
 
+ #popup {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: black;
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 14px; 
+ }
 
+
+.clipboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 30px;
+  padding: 50px;
+  text-align: center;
+}
+
+img[src*="snowman-without-snow"]{
+  width: 150px;
+}

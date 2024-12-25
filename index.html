@@ -3,6 +3,24 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html">
   <meta charset="UTF-8">
+  <script>
+        // Function to copy text to clipboard
+        function copyToClipboard() {
+            const textToCopy = "🤯🔥Have you seen this??🔥 \n I have a surprise message written just for you, yes just for you✨ \n open this ⬇️⬇️ to view \n \n https://xmasmessage.vercel.app"
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    // Show popup for a few seconds
+                    const popup = document.getElementById('popup');
+                    popup.style.display = 'block';
+                    setTimeout(() => {
+                        popup.style.display = 'none';
+                    }, 2000); // Hide after 2 seconds
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+        }
+    </script>
   <link rel="stylesheet" href="styles.css">
   <title>Merry Christmas from me</title>
 </head>
@@ -10,7 +28,7 @@
   
   <div class="top-decoration-container">
     <div class="social-media-and-link-container">
-      <img src="images/ride.png">
+      <img src="images/santa-glide.png">
     </div>
     <a href="https://iamsolomon.vercel.app"  target="_blank"><img src="images/xmax-box-with-rope-and-ball.png" alt="xmax box with rope"></a>
   </div>
@@ -20,7 +38,7 @@
      <h2 class="xmas">Merry Christmas!!</h2>
      <h2>Merry Christmas!!</h2>
   </div>
-  <div clas
+
   <div class="text-container chakra-petch-regular typejs-cursor ">
       <h2><span id="typed-text" style="color: orange"></span></h2>
     </div>
@@ -42,7 +60,7 @@
       backSpeed: 150,
       backDelay: 2000,
       loop: true,
-      cursorChar: "<span style='font-size: 8rem'>⛄</span>",
+      cursorChar: "<img src='images/snowman-without-snow.svg'>",
     });
    </script>
   
@@ -50,8 +68,14 @@
     <a href="https://iamsolomon.vercel.app" target="_blank"><img src="images/xmas-box-alone.png" alt="xmas box"></a>
     
     <img src="images/aloneelf.png">
-    
   </div>
+    <div class="clipboard">
+      <img src="images/redclipboard.svg" alt="Click to Copy" onclick="copyToClipboard()" style="cursor:pointer;">
+      <p class="chakra-petch-light">Copy & paste</p>
+      <!-- Popup message -->
+      <div id="popup">Copied to clipboard!</div>
+    </div>
+    
   <footer>
        <div class="made-with chakra-petch-light">
         <h1>Made with ♥️ just for you my dear</h1>
@@ -61,9 +85,8 @@
       <p>Make them feel special this Christmas...</p>
     </div>
   </footer>
-  
   <div class="gnome-container">
-    
+     
     <img src="images/gnome.png" alt="gnome">
   </div>
   
